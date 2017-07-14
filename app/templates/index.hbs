@@ -1,0 +1,10 @@
+{{outlet}}
+
+<div class="">
+  <ul>
+    {{#each model as |question|}}
+    {{question-tile question=question}}
+    {{/each}}
+  </ul>
+</div>
+{{new-question}}
