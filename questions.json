@@ -3,7 +3,7 @@
     "author":"first author",
     "content": "first content",
     "note": "first note",
-    "answer": [
+    "answers": [
       {
         "mwandishi": "first answer question author",
         "jibu": "first answer to first question"
@@ -18,7 +18,7 @@
     "author": "second question author",
     "content": "second question content",
     "note": "second question note",
-    "answer": [
+    "answers": [
       {
         "mwandishi": "second question first answer author",
         "jibu": "second question first answer"
