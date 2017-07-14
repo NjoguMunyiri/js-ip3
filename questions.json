@@ -1,0 +1,35 @@
+{"questions":[
+  {
+    "author":"first author",
+    "content": "first content",
+    "note": "first note",
+    "answer": [
+      {
+        "mwandishi": "first answer question author",
+        "jibu": "first answer to first question"
+    },
+    {
+      "mwandishi":"first question second answer author",
+      "jibu": "first question second answer"
+    }
+    ]
+  },
+  {
+    "author": "second question author",
+    "content": "second question content",
+    "note": "second question note",
+    "answer": [
+      {
+        "mwandishi": "second question first answer author",
+        "jibu": "second question first answer"
+      },
+      {
+        "mwandishi": "second question secon answer author",
+        "jibu": "second question second answe"
+      }
+    ]
+  }
+
+]
+
+}

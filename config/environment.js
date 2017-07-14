@@ -23,10 +23,12 @@ module.exports = function(environment) {
       authDomain: "js-ip3.firebaseapp.com",
       databaseURL: "https://js-ip3.firebaseio.com",
       projectId: "js-ip3",
-      storageBucket: "",
+      storageBucket: "js-ip3.appspot.com",
       messagingSenderId: "745660632587"
+
+
     },
-    
+
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
