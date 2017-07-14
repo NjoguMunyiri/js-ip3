@@ -1,5 +1,5 @@
 {{yield}}
 <li>
-  {{question.author}} is asking {{question.content}}?
-  additional notes: {{question.note}}
+  {{#link-to 'question' question.id}}{{question.author}} is asking {{question.content}}?
+  additional notes: {{question.note}} {{/link-to}}
 </li>
