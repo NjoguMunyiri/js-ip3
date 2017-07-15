@@ -1,4 +1,8 @@
 {{yield}}
 {{question.author}} {{question.content}}{{question.note}}
 Answer:
-{{#each question.answer}}{{/each}}
+<ul>
+  {{#each answer as |answer|}}
+  <li>{{answer.mwandishi}} wrote {{answer.jibu}}</li>
+  {{/each}}
+</ul>
