@@ -1,5 +1,8 @@
 {{yield}}
 {{question.author}} {{question.content}}{{question.note}}
+
+{{edit-question question=question updateQuestion="updateQuestion" deleteQuestion="deleteQuestion"}}
+
 Answer:
 <ul>
   {{#each answer as |answer|}}
