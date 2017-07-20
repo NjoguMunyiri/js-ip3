@@ -1,5 +1,10 @@
+{{!--Component that displays all questions as a list--}}
 {{yield}}
-<li>
-  {{#link-to 'question' question.id}}{{question.author}} is asking {{question.content}}?
-  additional notes: {{question.note}} {{/link-to}}
-</li>
+<div class="jumbotron">
+  <li>
+    {{#link-to 'question' question.id}}
+    Author: {{question.author}} <br>
+     Question: {{question.content}}? <br><br>
+    additional notes: {{question.note}} {{/link-to}}
+  </li>
+  </div>
