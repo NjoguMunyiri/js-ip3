@@ -1,6 +1,7 @@
+{{!--Component to display a form to edit a question--}}
 {{yield}}
-<div class="jumbotron">
 {{#if showQuestionForm}}
+<div class="jumbotron">
   <h1>Edit Question</h1>
   <div class="">
     <form class="">
@@ -22,10 +23,10 @@
       <button {{action "update" question}}>Update</button>
     </form>
   </div>
+</div>
   {{else}}
   <button {{action "editQuestion" question}}>Edit Question</button>
-  {{/if}}
-</div>
+{{/if}}
 <div class="">
   <button {{action "delQuestion" question}}>Delete</button>
 </div>
