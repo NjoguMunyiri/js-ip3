@@ -28,7 +28,7 @@ export default Ember.Route.extend({
       newAnswer.save().then(function() {
         return question.save();
       });
-      this.transitionTo('index');
+      this.transitionTo('question',question);
     }
   }
 });
