@@ -1,3 +1,12 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{!-- Feel free to remove this! --}}
+{{!--Header, Navbar template that will be on every page--}}
+<div class="container">
+  <div class="page-header">
+    <nav class="navbar navbar-inverse">
+      {{#link-to 'index'}}
+      <button class="nav navbar-nav navbar" id="headerhome">Home</button>
+      {{/link-to}}
+      <h1 class="navbar-text navbar" id="headertext">Question & Answer</h1>
+    </nav>
+  </div>
 {{outlet}}
+</div>
