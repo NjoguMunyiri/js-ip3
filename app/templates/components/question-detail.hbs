@@ -1,9 +1,16 @@
+{{!--Component to display details of a specific question--}}
 {{yield}}
-{{question.author}} {{question.content}}{{question.note}}
+<div class="h2">
+Author: {{question.author}}<br>
+Question: {{question.content}}
+<br><br>
+note: {{question.note}}
+<br>
+</div>
 
 {{edit-question question=question updateQuestion="updateQuestion" deleteQuestion="deleteQuestion"}}
-
-Answer:
+<hr>
+Answers:
 <ul>
   {{#each answer as |answer|}}
   <li>{{answer.mwandishi}} wrote {{answer.jibu}}</li>
