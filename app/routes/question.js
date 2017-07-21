@@ -29,6 +29,19 @@ export default Ember.Route.extend({
         return question.save();
       });
       this.transitionTo('question',question);
+    },
+    //upvote function increments the value of vote if the user clicked a thumbs up
+    upvote(answer,like){
+      if (like) {
+        answer.incrementProperty('vote');
+      }
+      answer.save();
+    },
+    downvote(answer,like){
+      if (like===false) {
+        answer.decrementProperty('vote');
+      }
+      answer.save();
     }
   }
 });

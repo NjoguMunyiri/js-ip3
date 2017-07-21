@@ -9,3 +9,8 @@
 #headertext{
   margin-left: 25%;
 }
+
+.glyphicon{
+  cursor: pointer;
+
+}

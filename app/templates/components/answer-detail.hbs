@@ -1,3 +1,9 @@
 {{!--component to dispaly answers to a specific question--}}
 {{yield}}
-<li>{{answer.mwandishi}} said: {{answer.jibu}}</li>
+<li>
+  {{answer.mwandishi}}
+  said: {{answer.jibu}}
+  <div id="upVoteGlyphicon" class="glyphicon glyphicon-thumbs-up"{{action 'upvote' answer}}></div>
+  <div id="downVoteGlyphicon" class="glyphicon glyphicon-thumbs-down"{{action 'downvote' answer}}></div>
+  {{answer.vote}}
+</li>
