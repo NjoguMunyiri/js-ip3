@@ -13,3 +13,5 @@ User can add a new question on the index/home page.
 User can edit a question in the question page.
 user can delete a question in the question page.
 user can add an answer in the question page.
+
+Application displays a fire symbol for popular questions with five answers and more, and a snowflake symbol for questions with no answer 
