@@ -28,7 +28,8 @@ export default Ember.Route.extend({
       newAnswer.save().then(function() {
         return question.save();
       });
-      this.transitionTo('question',question);
+      this.transitionTo('question',question,model.get('question'));
+
     },
     //upvote function increments the value of vote if the user clicked a thumbs up
     upvote(answer,like){

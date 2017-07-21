@@ -10,7 +10,8 @@ export default Ember.Component.extend({
       var params = {
         mwandishi: this.get('mwandishi'),
         jibu: this.get('jibu'),
-        question: this.get('question')
+        question: this.get('question'),
+        vote: 0
       };
       this.set('showNewAnswerForm',false);
       this.sendAction('saveAnswer',params);
