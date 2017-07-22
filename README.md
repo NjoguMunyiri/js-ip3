@@ -14,5 +14,6 @@ User can edit a question in the question page.
 user can delete a question in the question page.
 user can add an answer in the question page.
 
-Application displays a fire symbol for popular questions with five answers and more, and a snowflake symbol for questions with no answer
-The application sorts and displays answers according to the number of votes it has 
+Application displays a fire symbol for popular questions with five answers and more, and a snowflake symbol for questions with no answer.
+The application sorts and displays answers according to the number of votes it has.
+The application displays on the index/home page the number of answers a question has. 
