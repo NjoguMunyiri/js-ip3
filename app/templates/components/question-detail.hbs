@@ -11,8 +11,12 @@ note: {{question.note}}
 {{edit-question question=question updateQuestion="updateQuestion" deleteQuestion="deleteQuestion"}}
 <hr>
 Answers:
-<ul>
-  {{#each answer as |answer|}}
-  <li>{{answer.mwandishi}} wrote {{answer.jibu}}</li>
-  {{/each}}
-</ul>
+<div class="">
+  {{!--Each answer is displayed in descending order according to the number of votes it has--}}
+  <ul>
+    {{#each sortedAnswers as |answer|}}
+    {{answer-detail answer=answer upvote="upvote" downvote="downvote"}}
+    {{/each}}
+  </ul>
+  {{new-answer saveAnswer="saveAnswer" question=question}}
+</div>

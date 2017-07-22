@@ -1,13 +1,4 @@
 {{outlet}}
 <div class="">
-{{question-detail question=model.question updateQuestion="updateQuestion" deleteQuestion="deleteQuestion"}}
-</div>
-<hr>
-<div class="">
-  <ul>
-    {{#each model.question.answers as |answer|}}
-    {{answer-detail answer=answer upvote="upvote" downvote="downvote"}}
-    {{/each}}
-  </ul>
-  {{new-answer saveAnswer="saveAnswer" question=model.question}}
+{{question-detail question=model.question updateQuestion="updateQuestion" deleteQuestion="deleteQuestion" answer=answer upvote="upvote" downvote="downvote" saveAnswer="saveAnswer"}}
 </div>
